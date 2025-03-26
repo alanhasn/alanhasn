@@ -1,16 +1,31 @@
-## Hi there 👋
+# 👋 Hi, I'm ALAN Hassan!
 
-<!--
-**alanhasn/alanhasn** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a passionate and dedicated web developer with a focus on Django. I work on projects involving web development, networking, and cybersecurity. I love exploring new technologies and continuously learning to improve my skills in the tech world.
 
-Here are some ideas to get you started:
+## 🔭 Currently Working On:
+- Developing the [Internal Network Management System](link-to-project) using Django
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🌱 Currently Learning:
+- Advanced Django Concepts
+- Networking & Security
+- Kotlin for Backend Development
+
+## 💼 My Skills:
+- Collaborative teamwork
+- Problem-solving and analytical thinking
+- Teaching and mentoring
+- Extensive research and self-learning
+
+## 🧠 My Interests:
+- AI (Natural Language Processing, Deep Learning, Machine Learning)
+- Cybersecurity and Web Security
+- Networking and Network Security
+
+## 📫 How to Reach Me:
+- Email: [whoamialan11@gmail.com]
+- GitHub: [GitHub Profile](https://github.com/alanhasn)
+
+---
+
+### GitHub Stats:
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=ALANHassan&show_icons=true&theme=radical)](https://github.com/ALANHassan)
