@@ -1,4 +1,4 @@
-# 👋 Hi, I'm ALAN Hassan!
+# 👋 Hi, I'm ALAN!
 
 I'm a passionate and dedicated web developer with a focus on Django. I work on projects involving web development, networking, and cybersecurity. I love exploring new technologies and continuously learning to improve my skills in the tech world.
 
@@ -28,4 +28,4 @@ I'm a passionate and dedicated web developer with a focus on Django. I work on p
 ---
 
 ### GitHub Stats:
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=ALANHassan&show_icons=true&theme=radical)](https://github.com/ALANHassan)
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=alanhasn&show_icons=true&theme=radical)](https://github.com/alanhasn)
