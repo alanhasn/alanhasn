@@ -3,7 +3,7 @@
 I'm a passionate and dedicated web developer with a focus on Django. I work on projects involving web development, networking, and cybersecurity. I love exploring new technologies and continuously learning to improve my skills in the tech world.
 
 ## 🔭 Currently Working On:
-- Developing the [Internal Network Management System]([link-to-project](https://github.com/alanhasn/Internal-Network-Management-System-INMS)) using Django
+- Developing the [Internal Network Management System](https://github.com/alanhasn/Internal-Network-Management-System-INMS) using Django
 
 ## 🌱 Currently Learning:
 - Advanced Django Concepts
