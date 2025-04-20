@@ -29,3 +29,5 @@ I'm a passionate and dedicated web developer with a focus on Django. I work on p
 
 ### GitHub Stats:
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=alanhasn&show_icons=true&theme=radical)](https://github.com/alanhasn)
+![Profile views](https://komarev.com/ghpvc/?username=alanhasn&label=Profile%20views&color=blue&style=flat)
+
