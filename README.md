@@ -2,13 +2,11 @@
 
 I'm a passionate and dedicated web developer with a focus on Django. I work on projects involving web development, networking, and cybersecurity. I love exploring new technologies and continuously learning to improve my skills in the tech world.
 
-## 🔭 Currently Working On:
-- Developing the [Internal Network Management System](https://github.com/alanhasn/Internal-Network-Management-System-INMS) using Django
-
 ## 🌱 Currently Learning:
 - Advanced Django Concepts
 - Networking & Security
 - Kotlin for Backend Development
+- API Development using DRF
 
 ## 💼 My Skills:
 - Collaborative teamwork
@@ -20,6 +18,7 @@ I'm a passionate and dedicated web developer with a focus on Django. I work on p
 - AI (Natural Language Processing, Deep Learning, Machine Learning)
 - Cybersecurity and Web Security
 - Networking and Network Security
+- Web Development 
 
 ## 📫 How to Reach Me:
 - Email: [whoamialan11@gmail.com]
