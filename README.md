@@ -80,8 +80,9 @@ I'm a passionate and dedicated web developer with a focus on Django Backend. I w
   
 
 ## 📫 How to Reach Me:
-- Email: [whoamialan11@gmail.com]
-- GitHub: [GitHub Profile](https://github.com/alanhasn)
+- Email: whoamialan11@gmail.com
+- GitHub: https://github.com/alanhasn
+- Website https://alanhasn.github.io/Portfolio/
 
 ---
 
