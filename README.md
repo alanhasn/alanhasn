@@ -64,20 +64,21 @@ I'm a passionate and dedicated web developer with a focus on Django Backend. I w
 - Advanced Django Concepts
 - Networking & Security
 - Kotlin for Backend Development
+- HTMX + Django
+- Redis + Celery
 - API Development using DRF
 
 ## 💼 My Skills:
 - Collaborative teamwork
-- Problem-solving and analytical thinking
 - Teaching and mentoring
 - Extensive research and self-learning
 
 ## 🧠 My Interests:
 - AI (Natural Language Processing, Deep Learning, Machine Learning)
-- Cybersecurity and Web Security
+- Cybersecurity and Security
 - Networking and Network Security
 - Web Development
-  
+
 
 ## 📫 How to Reach Me:
 - Email: whoamialan11@gmail.com
