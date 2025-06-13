@@ -72,6 +72,8 @@
 - Collaborative teamwork
 - Teaching and mentoring
 - Extensive research and self-learning
+- AI-assisted coding (Vibe Coding) for efficient development and prototyping
+
 
 ## 🧠 My Interests:
 - AI (NLP, Deep Learning, ML)
