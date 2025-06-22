@@ -87,7 +87,7 @@
 - 🌍 Website: [alanhasn.github.io/Portfolio](https://alanhasn.github.io/Portfolio/)
 
 ---
-
+https://profile-counter.glitch.me/{alanhasn}/count.svg
 <h2 align="center">📊 My GitHub Stats</h2>
 
 <!-- ✅ Contribution Graph -->
