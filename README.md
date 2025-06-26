@@ -14,6 +14,16 @@
 
 <!-- Row 2 -->
 <p align="center">
+  <a href="https://github.com/alanhasn/TaskCLI-Coroutines-KotlinExposedORM">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=TaskCLI-Coroutines-KotlinExposedORM&theme=radical" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/alanhasn/Task-manager-using-Django-HTMX-and-DRF">
+    <img hight=" "src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=Task-manager-using-Django-HTMX-and-DRF&theme=radical" />
+  </a>
+</p>
+<!-- Row 3 -->
+<p align="center">
   <a href="https://github.com/alanhasn/E-Commerce-API-Practice-DRF-course">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=E-Commerce-API-Practice-DRF-course&theme=radical" />
   </a>
@@ -22,7 +32,7 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=my_cybersec_lib&theme=radical" />
   </a>
 </p>
-<!-- Row 3 -->
+<!-- Row 4 -->
 <p align="center">
   <a href="https://github.com/alanhasn/Kotlin_gradle-Library-Management-System-with-DB">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=Kotlin_gradle-Library-Management-System-with-DB&theme=radical" />
