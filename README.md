@@ -81,48 +81,62 @@ Status: Always learning, always building 💪
 
 ---
 
+<div align="center">
+
 ## 🚧 Currently Learning
 
-* ⚙️ **Advanced Django & CBVs**
-* 🧪 **DRF & RESTful APIs**
-* 🔐 **Web Security & Networking**
-* 🌐 **Cloud Infrastructure (OCI)**
-* ⚡ **Kotlin Coroutines & Backend APIs**
+⚙️ **Advanced Django & CBVs**  
+🧪 **DRF & RESTful APIs**  
+🔐 **Web Security & Networking**  
+🌐 **Cloud Infrastructure (OCI)**  
+⚡ **Kotlin Coroutines & Backend APIs**
 
 ---
 
 ## 🧠 Interests
 
-* 🧬 Artificial Intelligence (LLMs, ML, NLP)
-* 🔐 Web & Network Security
-* ⚙️ Infrastructure & DevOps
-* 🌍 Open Source Collaboration
+🧬 Artificial Intelligence (LLMs, ML, NLP)  
+🔐 Web & Network Security  
+⚙️ Infrastructure & DevOps  
+🌍 Open Source Collaboration
+
+</div>
+
 
 ---
 
-## 🤝 Let's Connect
+<h1 align="center">🤝 Let's Connect </h1>
 
-| Platform     | Link                                                                  |
-| ------------ | --------------------------------------------------------------------- |
-| 📧 Email     | [whoamialan11@gmail.com](mailto:whoamialan11@gmail.com)               |
-| 💻 GitHub    | [github.com/alanhasn](https://github.com/alanhasn)                    |
-| 🌐 Portfolio | [alanhasn.github.io/online-cv](https://alanhasn.github.io/online-cv/) |
+<table align="center"> <tr> <td>📧 <strong>Email</strong></td> <td><a href="mailto:whoamialan11@gmail.com">whoamialan11@gmail.com</a></td> </tr> <tr> <td>💻 <strong>GitHub</strong></td> <td><a href="https://github.com/alanhasn" target="_blank">github.com/alanhasn</a></td> </tr> <tr> <td>📝 <strong>Dev.to</strong></td> <td><a href="https://dev.to/alanhasn" target="_blank">dev.to/alanhasn</a></td> </tr> <tr> <td>🐦 <strong>Twitter (X)</strong></td> <td><a href="https://x.com/Alan1138789" target="_blank">x.com/Alan1138789</a></td> </tr> <tr> <td>🌐 <strong>Portfolio</strong></td> <td><a href="https://alanhasn.github.io/online-cv" target="_blank">alanhasn.github.io/online-cv</a></td> </tr> </table>
 
 ---
 
-## 📈 GitHub Analytics
 
-<p align="center">
+<h1 align="center"> 📈 GitHub Analytics </h1>
+
+<div align="center">
+
+  <!-- GitHub Streak -->
+  <a href="https://git.io/streak-stats">
+    <img src="https://github-readme-streak-stats-seven-flame.vercel.app?user=alanhasn&theme=vision-friendly-dark&card_width=500" alt="GitHub Streak" />
+  </a>
+
+  <br><br>
+
+  <!-- GitHub Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=alanhasn&show_icons=true&locale=en&theme=vision-friendly-dark&hide_border=false&rank_icon=github&count_private=true" alt="GitHub Stats" />
+
+  <br><br>
+
+  <!-- Top Languages -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alanhasn&layout=compact&theme=highcontrast&langs_count=8" alt="Top Languages" />
+
+  <br><br>
+
+  <!-- Contribution Graph -->
   <img src="https://ghchart.rshah.org/alanhasn" alt="Contribution Graph" />
-</p>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=alanhasn&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alanhasn&layout=compact&theme=radical&hide_border=true" alt="Most Used Languages" />
-</p>
+  <br><br>
 
 ---
 
