@@ -1,8 +1,19 @@
-<h1 align="center">👋 Hey there, I'm ALAN</h1>
+<div id="header" align="center">
+  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+</div>
+
+<h1 align="center">
+  Hey there, I'm ALAN
+  <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
+</h1>  
 
 <p align="center">
   🚀 Passionate Django Backend Developer | 🛡️ Cybersecurity and Networking Enthusiast | ☁️ Cloud & Backend & Kotlin Learner
 </p>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
+</div>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=alanhasn&label=Profile%20views&color=blueviolet&style=flat-square" />
@@ -85,10 +96,9 @@ Status: Always learning, always building 💪
 
 ## 🚧 Currently Learning
 
-⚙️ **Advanced Django & CBVs**  
+⚙️ **Advanced Django**  
 🧪 **DRF & RESTful APIs**  
 🔐 **Web Security & Networking**  
-🌐 **Cloud Infrastructure (OCI)**  
 ⚡ **Kotlin Coroutines & Backend APIs**
 
 ---
@@ -97,6 +107,7 @@ Status: Always learning, always building 💪
 
 🧬 Artificial Intelligence (LLMs, ML, NLP)  
 🔐 Web & Network Security  
+☁️ Cloud Computing
 ⚙️ Infrastructure & DevOps  
 🌍 Open Source Collaboration
 
