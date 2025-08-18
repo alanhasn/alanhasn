@@ -29,38 +29,18 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=IP-Vulnerability-Web-App-Scanner&theme=radical" />
   </a>
   &nbsp;&nbsp;
-  <a href="https://github.com/alanhasn/Django-HTMX_ContactHub">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=Django-HTMX_ContactHub&theme=radical" />
+  <a href="https://github.com/alanhasn/TaskCLI-Coroutines-KotlinExposedORM">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=TaskCLI-Coroutines-KotlinExposedORM&theme=radical" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/alanhasn/TaskCLI-Coroutines-KotlinExposedORM">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=TaskCLI-Coroutines-KotlinExposedORM&theme=radical" />
+  <a href="https://github.com/alanhasn/my_cybersec_lib">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=my_cybersec_lib&theme=radical" />
   </a>
   &nbsp;&nbsp;
   <a href="https://github.com/alanhasn/Task-manager-using-Django-HTMX-and-DRF">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=Task-manager-using-Django-HTMX-and-DRF&theme=radical" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/alanhasn/E-Commerce-API-Practice-DRF-course">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=E-Commerce-API-Practice-DRF-course&theme=radical" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/alanhasn/my_cybersec_lib">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=my_cybersec_lib&theme=radical" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/alanhasn/Kotlin_gradle-Library-Management-System-with-DB">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=Kotlin_gradle-Library-Management-System-with-DB&theme=radical" />
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://github.com/alanhasn/Some-Python-Tools">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=alanhasn&repo=Some-Python-Tools&theme=radical" />
   </a>
 </p>
 
