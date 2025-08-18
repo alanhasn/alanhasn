@@ -64,6 +64,10 @@
   </a>
 </p>
 
+<p align="center">
+  👉 <a href="https://github.com/alanhasn?tab=repositories">Explore more projects</a>
+</p>
+
 ---
 
 ## 💡 About Me
@@ -94,22 +98,22 @@ Status: Always learning, always building 💪
 
 <div align="center">
 
-## 🚧 Currently Learning
+## Currently Learning
 
-⚙️ **Advanced Django**  
-🧪 **DRF & RESTful APIs**  
-🔐 **Web Security & Networking**  
-⚡ **Kotlin Coroutines & Backend APIs**
+⚙️ Advanced Django (**Mastering CBVs, Signals & Middlewares**)  
+🧪 DRF & RESTful APIs (**Full CRUD, Auth, Permissions**)  
+🔐 Web Security & Networking (**PenTesting & Vulnerability Scanning**)  
+⚡ Kotlin Coroutines & Backend APIs (**CLI & Ktor**)  
 
 ---
 
 ## 🧠 Interests
 
-🧬 Artificial Intelligence (LLMs, ML, NLP)  
-🔐 Web & Network Security  
-☁️ Cloud Computing
-⚙️ Infrastructure & DevOps  
-🌍 Open Source Collaboration
+Artificial Intelligence (LLMs, ML, NLP)  
+Web & Network Security  
+Cloud Computing
+Infrastructure & DevOps  
+Open Source Collaboration
 
 </div>
 
@@ -145,7 +149,16 @@ Status: Always learning, always building 💪
   <br><br>
 
   <!-- Contribution Graph -->
-  <img src="https://ghchart.rshah.org/alanhasn" alt="Contribution Graph" />
+<p align="center">
+    <a href="https://wakatime.com/@alanhasn">
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=alanhasn&theme=react-dark&hide_border=true&hide_title=false&area=true&custom_title=Total%20contribution%20graph%20in%20all%20repo" width="95%" alt="activity graph">
+    </a>
+</p>
+
+
+![snake animation](https://raw.githubusercontent.com/alanhasn/alanhasn/output/snake.svg)
+
+
 
   <br><br>
 
