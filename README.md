@@ -71,6 +71,8 @@ Status: Always learning, always building 💪
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
 </p>
 
 
@@ -89,11 +91,12 @@ Status: Always learning, always building 💪
 
 ## 🧠 Interests
 
-Artificial Intelligence (LLMs, ML, NLP)  
-Web & Network Security  
-Cloud Computing
-Infrastructure & DevOps  
-Open Source Collaboration
+- Artificial Intelligence (LLMs, ML, NLP)
+- Web & Network Security  
+- Cloud Computing
+- Automation
+- Infrastructure & DevOps  
+- Open Source Collaboration
 
 </div>
 
