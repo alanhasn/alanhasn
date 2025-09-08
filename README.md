@@ -8,7 +8,7 @@
 </h1>  
 
 <p align="center">
-  🚀 Passionate Django Backend Developer | 🛡️ Cybersecurity and Networking Enthusiast | ☁️ Cloud & Backend & Kotlin Learner
+  🚀 Passionate Django Backend Developer | 🛡️ Cybersecurity and Networking Enthusiast | Kotlin <b>(Android)</b> & Go Learner
 </p>
 
 <div align="center">
@@ -55,7 +55,7 @@
 ```yaml
 Name: Alan Hassan
 Role: Web Developer & Network Explorer
-Focus: Backend with Django | APIs | Cloud | Network Security
+Focus: Backend with Django | APIs | Network Security
 Status: Always learning, always building 💪
 ````
 
@@ -80,26 +80,22 @@ Status: Always learning, always building 💪
 
 <div align="center">
 
-## Currently Learning
+## 📚 Currently Learning  
 
-⚙️ Advanced Django (**Mastering CBVs, Signals & Middlewares**)  
-🧪 DRF & RESTful APIs (**Full CRUD, Auth, Permissions**)  
-🔐 Web Security & Networking (**PenTesting & Vulnerability Scanning**)  
-⚡ Kotlin Coroutines & Backend APIs (**CLI & Ktor**)  
-
+🔐 **Wireless Networks** – fundamentals, security, and protocols  
+⚡ **Kotlin (Android)** – just getting started with Android development  
+🌀 **Go Language** – learning the basics of Go programming
+  
 ---
 
-## 🧠 Interests
+## 🧠 Interests  
 
-- Artificial Intelligence (LLMs, ML, NLP)
-- Web & Network Security  
-- Cloud Computing
-- Automation
-- Infrastructure & DevOps  
-- Open Source Collaboration
-
-</div>
-
+🤖 **Artificial Intelligence** – LLMs, ML, and NLP  
+🔐 **Web & Network Security** – protection, vulnerabilities, and penetration testing  
+☁️ **Cloud Computing** – infrastructure, deployment, and scaling  
+⚙️ **Automation** – efficiency through scripts and tools  
+🛠️ **Infrastructure & DevOps** – CI/CD, containers, and system management  
+🌍 **Open Source Collaboration** – contributing and building with the community  
 
 ---
 
