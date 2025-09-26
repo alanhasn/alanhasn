@@ -59,22 +59,103 @@ Focus: Backend with Django | APIs | Network Security
 Status: Always learning, always building 💪
 ````
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white"/>
-  <img src="https://img.shields.io/badge/DRF-092E20?style=for-the-badge&logo=django&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTMX-0D1117?style=for-the-badge&logo=html5&logoColor=blue"/>
-  <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sqlite&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"/>
-</p>
+<h2>💻 My tools and favorite technologies</h2>
+<table>
+  <tr>
+    <!-- Languages -->
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50"/><br>
+      Python
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="50"/><br>
+      Kotlin
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50"/><br>
+      JavaScript
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="100"/><br>
+      Go
+    </td>
 
+<!-- Frameworks -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="50"/><br>
+  Django
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="50"/><br>
+  DRF / FastAPI
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/htmx.svg" width="50" style="background:transparent"/><br>
+  HTMX
+</td>
+
+
+<!-- Databases -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50"/><br>
+  PostgreSQL
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="50"/><br>
+  SQLite
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50"/><br>
+  MySQL
+</td>
+
+<!-- Networking & Security -->
+<td align="center" width="110">
+  <img src="https://images.openai.com/thumbnails/url/qWMfmXicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7xcjHIc8oJdg80yDNILQxzr_CyCA4uCjYpcSl1DCkzDvX1KwurMsx1DS5Jdwv3DfYsy3SL8HfyLclTKwYAssko9w" width="50"/><br>
+  Networking
+</td>
+<td align="center" width="110">
+  <img src="https://cdn-icons-png.flaticon.com/512/732/732232.png" width="50"/><br>
+  Wireshark
+</td>
+<td align="center" width="110">
+  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50"/><br>
+  Nmap
+</td>
+
+<!-- Tools -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50"/><br>
+  Git
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50"/><br>
+  GitHub
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50"/><br>
+  Docker
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="50"/><br>
+  VS Code
+</td>
+<td align="center" width="110">
+  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="50"/><br>
+  Postman
+</td>
+
+<!-- Operating Systems -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50"/><br>
+  Linux
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="50"/><br>
+  Windows
+</td>
+  </tr>
+</table>
 
 ---
 
