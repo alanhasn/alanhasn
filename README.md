@@ -3,12 +3,12 @@
 </div>
 
 <h1 align="center">
-  Hey there, I'm ALAN
+  Hey there, I'm VORSYNTH
   <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px"/>
 </h1>  
 
 <p align="center">
-  🚀 Passionate Django Backend Developer | 🛡️ Cybersecurity and Networking Enthusiast | Kotlin <b>(Android)</b> & Go Learner
+  🚀 DevOps & Backend Developer | 🛡️ Cybersecurity and Networking Enthusiast | Kotlin Learner
 </p>
 
 <div align="center">
@@ -53,7 +53,7 @@
 ## 💡 About Me
 
 ```yaml
-Name: Alan Hassan
+Name: Vorsynth
 Role: Web Developer & Network Explorer
 Focus: Backend with Django | APIs | Network Security
 Status: Always learning, always building 💪
@@ -161,14 +161,6 @@ Status: Always learning, always building 💪
 
 <div align="center">
 
-## 📚 Currently Learning  
-
-🔐 **Wireless Networks** – fundamentals, security, and protocols  
-⚡ **Kotlin (Android)** – just getting started with Android development  
-🌀 **Go Language** – learning the basics of Go programming
-  
----
-
 ## 🧠 Interests  
 
 🤖 **Artificial Intelligence** – LLMs, ML, and NLP  
@@ -182,7 +174,7 @@ Status: Always learning, always building 💪
 
 <h1 align="center">🤝 Let's Connect </h1>
 
-<table align="center"> <tr> <td>📧 <strong>Email</strong></td> <td><a href="mailto:whoamialan11@gmail.com">whoamialan11@gmail.com</a></td> </tr> <tr> <td>💻 <strong>GitHub</strong></td> <td><a href="https://github.com/alanhasn" target="_blank">github.com/alanhasn</a></td> </tr> <tr> <td>📝 <strong>Dev.to</strong></td> <td><a href="https://dev.to/alanhasn" target="_blank">dev.to/alanhasn</a></td> </tr> <tr> <td>🐦 <strong>Twitter (X)</strong></td> <td><a href="https://x.com/Alan1138789" target="_blank">x.com/Alan1138789</a></td> </tr> <tr> <td>🌐 <strong>Portfolio</strong></td> <td><a href="https://alanhasn.github.io/online-cv" target="_blank">alanhasn.github.io/online-cv</a></td> </tr> </table>
+<table align="center"> <tr> <td>📧 <strong>Email</strong></td> <td><a href="mailto:whoamialan11@gmail.com">vorsynth1212@gmail.com</a></td> </tr> <tr> <td>💻 <strong>GitHub</strong></td> <td><a href="https://github.com/alanhasn" target="_blank">github.com/vorsynth</a></td> </tr> <tr> <td>📝 <strong>Dev.to</strong></td> <td><a href="https://dev.to/alanhasn" target="_blank">dev.to/vorsynth</a></td> </tr> <tr> <td>🐦 <strong>Twitter (X)</strong></td> <td><a href="https://x.com/Alan1138789" target="_blank">x.com/Alan1138789</a></td> </tr> <tr> <td>🌐 <strong>Portfolio</strong></td> <td><a href="https://alanhasn.github.io/online-cv" target="_blank">alanhasn.github.io/online-cv</a></td> </tr> </table>
 
 ---
 
