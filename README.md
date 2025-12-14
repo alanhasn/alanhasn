@@ -39,6 +39,105 @@ I am a Backend and DevOps developer focused on:
 * I believe that **security is part of the design, not an afterthought**
 
 ---
+<h2>💻 My tools and favorite technologies</h2>
+<table>
+  <tr>
+    <!-- Languages -->
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50"/><br>
+      Python
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="50"/><br>
+      Kotlin
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50"/><br>
+      JavaScript
+    </td>
+    <td align="center" width="110">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="100"/><br>
+      Go
+    </td>
+
+<!-- Frameworks -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" width="50"/><br>
+  Django
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" width="50"/><br>
+  DRF / FastAPI
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/htmx.svg" width="50" style="background:transparent"/><br>
+  HTMX
+</td>
+
+
+<!-- Databases -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="50"/><br>
+  PostgreSQL
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="50"/><br>
+  SQLite
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="50"/><br>
+  MySQL
+</td>
+
+<!-- Networking & Security -->
+<td align="center" width="110">
+  <img src="https://images.openai.com/thumbnails/url/qWMfmXicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7xcjHIc8oJdg80yDNILQxzr_CyCA4uCjYpcSl1DCkzDvX1KwurMsx1DS5Jdwv3DfYsy3SL8HfyLclTKwYAssko9w" width="50"/><br>
+  Networking
+</td>
+<td align="center" width="110">
+  <img src="https://cdn-icons-png.flaticon.com/512/732/732232.png" width="50"/><br>
+  Wireshark
+</td>
+<td align="center" width="110">
+  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50"/><br>
+  Nmap
+</td>
+
+<!-- Tools -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50"/><br>
+  Git
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50"/><br>
+  GitHub
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50"/><br>
+  Docker
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="50"/><br>
+  VS Code
+</td>
+<td align="center" width="110">
+  <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="50"/><br>
+  Postman
+</td>
+
+<!-- Operating Systems -->
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" width="50"/><br>
+  Linux
+</td>
+<td align="center" width="110">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" width="50"/><br>
+  Windows
+</td>
+  </tr>
+</table>
+
+---
 
 ## 🧠 Core Skills Breakdown
 
@@ -155,6 +254,27 @@ I am a Backend and DevOps developer focused on:
 | 📧 Email  | [vorsynth11@gmail.com](mailto:whoamialan11@gmail.com)    |
 | 🦊 GitLab | [https://gitlab.com/vorsynth](https://gitlab.com/alanhasn) |
 | 🐙 GitHub | [https://github.com/vorsynth](https://github.com/alanhasn) |
+
+---
+
+## 📊 GitHub Statistics
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=alanhasn&show_icons=true&theme=radical&hide_border=true" height="170" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alanhasn&layout=compact&theme=radical&hide_border=true" height="170" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=alanhasn&theme=radical&hide_border=true" height="170" />
+</div>
+
+---
+
+## 📈 Contribution Graph
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=alanhasn&theme=redical&hide_border=true" />
+</div>
 
 ---
 
