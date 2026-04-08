@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  IT Technician & Backend,DevOps Junior Engineer • Networking and Security Enthusiast • Kotlin Developer
+  IT Technician & Backend and DevOps Engineer • Networking and Security Enthusiast • Kotlin Developer
 </p>
 
 <div align="center">
