@@ -7,12 +7,9 @@
 </h1>
 
 <p align="center">
-  IT Technician & Backend and DevOps Engineer • Networking and Security Enthusiast • Kotlin Developer
+  IT Technician & Backend and DevOps Engineer • Networking and Security  Enthusiast
 </p>
 
-<div align="center">
-  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="280"/>
-</div>
 
 ---
 
@@ -31,13 +28,6 @@ Philosophy:
   - Automation over repetition
 ```
 
-I am a Backend and DevOps developer focused on:
-
-* Building strong, scalable APIs
-* Designing secure and reliable systems
-* Understanding networking from the fundamentals (not just using tools)
-* I believe that **security is part of the design, not an afterthought**
-
 ---
 <h2>💻 My tools and favorite technologies</h2>
 <table>
@@ -50,14 +40,6 @@ I am a Backend and DevOps developer focused on:
     <td align="center" width="110">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" width="50"/><br>
       Kotlin
-    </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50"/><br>
-      JavaScript
-    </td>
-    <td align="center" width="110">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" width="100"/><br>
-      Go
     </td>
 
 <!-- Frameworks -->
@@ -94,14 +76,6 @@ I am a Backend and DevOps developer focused on:
   <img src="https://images.openai.com/thumbnails/url/qWMfmXicu1mUUVJSUGylr5-al1xUWVCSmqJbkpRnoJdeXJJYkpmsl5yfq5-Zm5ieWmxfaAuUsXL0S7F0Tw7xcjHIc8oJdg80yDNILQxzr_CyCA4uCjYpcSl1DCkzDvX1KwurMsx1DS5Jdwv3DfYsy3SL8HfyLclTKwYAssko9w" width="50"/><br>
   Networking
 </td>
-<td align="center" width="110">
-  <img src="https://cdn-icons-png.flaticon.com/512/732/732232.png" width="50"/><br>
-  Wireshark
-</td>
-<td align="center" width="110">
-  <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50"/><br>
-  Nmap
-</td>
 
 <!-- Tools -->
 <td align="center" width="110">
@@ -115,10 +89,6 @@ I am a Backend and DevOps developer focused on:
 <td align="center" width="110">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="50"/><br>
   Docker
-</td>
-<td align="center" width="110">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="50"/><br>
-  VS Code
 </td>
 <td align="center" width="110">
   <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="50"/><br>
@@ -139,130 +109,60 @@ I am a Backend and DevOps developer focused on:
 
 ---
 
-## 🧠 Core Skills Breakdown
-
-### 🐍 Backend Development
-
-* Django & Django REST Framework
-* FastAPI
-* API authentication & authorization
-* RBAC & permission systems
-* Asynchronous patterns
-* Clean architecture & modular design
-
-### 🌐 Networking
-
-* TCP/IP fundamentals
-* DNS, DHCP, NAT
-* Port forwarding & firewalls
-* Network monitoring & packet analysis
-* Internal network management concepts
-
-### 🔐 Security
-
-* Web vulnerabilities (OWASP Top 10)
-* API security
-* Input validation & sanitization
-* Authentication attacks & mitigations
-* Network scanning & reconnaissance
-* Secure coding practices
-
-### ⚙️ DevOps & Infrastructure
-
-* Docker & containerized services
-* CI/CD fundamentals
-* Linux server environments
-* Environment isolation
-* Logging & monitoring concepts
-
----
-
-## 🛠️ Tech Stack
-
-### 👨‍💻 Languages
-
-* Python
-* Kotlin
-
-
-### 🧰 Frameworks & Tools
-
-* Django
-* Django REST Framework
-* HTMX
-* Docker
-* Git & GitHub
-* Postman
-
-### 🗄️ Databases
-
-* PostgreSQL
-* MySQL
-* SQLite
-
-### 🖥️ Operating Systems
-
-* Linux
-* Windows (daily usage)
-
-### 🔍 Security & Networking Tools
-
-* Nmap
-* Wireshark
-* Custom Python security tools
-* Network analyzers
-
----
-
-## 🧪 Current Focus
-
-* Advanced API security
-* System design for backend services
-* Network-aware applications
-* DevOps workflows
-* Dockerized environments
-* Kotlin for backend & CLI tools
-
----
-
 ## 🧠 Learning Philosophy
 
-* Understand **how things work**, not just *how to use them*
-* Read RFCs & documentation
-* Break systems intentionally to understand failure modes
-* Automate repetitive tasks
-* Security is not optional
+- Understand **how systems actually work**, not just how to use tools
+- Learn from fundamentals first, then move toward abstraction
+- Read official documentation, RFCs, source code, and technical papers
+- Break systems intentionally to understand architecture and failure modes
+- Reverse engineer technologies to uncover internal behavior
+- Automate repetitive workflows whenever possible
+- Treat debugging as a core engineering skill
+- Build projects to validate knowledge, not just consume tutorials
+- Prioritize long-term understanding over short-term shortcuts
+- Security is never optional — design with security in mind from day one
+- Continuously refine problem-solving and analytical thinking
+- Stay curious about emerging technologies, protocols, and architectures
+- Learn by experimenting, testing, failing, and rebuilding
+- Always ask: *Why does this work?* and *What happens if it fails?*
+- Document everything learned for future reference and improvement
 
 ---
 
-## 🌍 Open Source
+## 🌍 Open Source & Collaboration
 
-* Building tools that solve real problems
-* Writing clean, readable, maintainable code
-* Open to collaboration on:
+- Building open-source tools that solve real-world problems
+- Passionate about meaningful and technically challenging projects
+- Open to collaboration on:
 
-  * Backend systems
-  * Security tooling
-  * Network-related projects
+  - Backend Systems
+  - Security Tooling
+  - Network Infrastructure
+  - Automation Platforms
+  - Monitoring & Logging Systems
+  - Developer Utilities
+  - Django & API Projects
+
+- Value readable code, good architecture, and technical transparency
+- Believe open source accelerates learning, innovation, and engineering quality
 
 ---
 
-## 🤝 Contact & Profiles
+## 📚 Continuous Learning
 
-| Platform  | Link                                                       |
-| --------- | ---------------------------------------------------------- |
-| 📧 Email  | [vorsynth11@gmail.com](mailto:whoamialan11@gmail.com)    |
-| 🦊 GitLab | [https://gitlab.com/vorsynth](https://gitlab.com/alanhasn) |
-| 🐙 GitHub | [https://github.com/vorsynth](https://github.com/alanhasn) |
+- Technology evolves constantly — so should engineers
+- Learning is a lifelong process, not a temporary phase
+- Regularly studying new protocols, frameworks, architectures, and tools
+- Combining theory with hands-on implementation
+- Building projects to transform knowledge into experience
+- Staying updated with industry trends, security research, and modern engineering practices
+- Never settling for “good enough” when improvement is possible
+
 
 ---
 
 ## 📊 GitHub Statistics
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=alanhasn&show_icons=true&theme=radical&hide_border=true" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=alanhasn&layout=compact&theme=radical&hide_border=true" height="170" />
-</div>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=alanhasn&theme=radical&hide_border=true" height="170" />
