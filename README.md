@@ -116,16 +116,8 @@ Philosophy:
 - Read official documentation, RFCs, source code, and technical papers
 - Break systems intentionally to understand architecture and failure modes
 - Reverse engineer technologies to uncover internal behavior
-- Automate repetitive workflows whenever possible
-- Treat debugging as a core engineering skill
 - Build projects to validate knowledge, not just consume tutorials
-- Prioritize long-term understanding over short-term shortcuts
 - Security is never optional — design with security in mind from day one
-- Continuously refine problem-solving and analytical thinking
-- Stay curious about emerging technologies, protocols, and architectures
-- Learn by experimenting, testing, failing, and rebuilding
-- Always ask: *Why does this work?* and *What happens if it fails?*
-- Document everything learned for future reference and improvement
 
 ---
 
@@ -145,19 +137,6 @@ Philosophy:
 
 - Value readable code, good architecture, and technical transparency
 - Believe open source accelerates learning, innovation, and engineering quality
-
----
-
-## 📚 Continuous Learning
-
-- Technology evolves constantly — so should engineers
-- Learning is a lifelong process, not a temporary phase
-- Regularly studying new protocols, frameworks, architectures, and tools
-- Combining theory with hands-on implementation
-- Building projects to transform knowledge into experience
-- Staying updated with industry trends, security research, and modern engineering practices
-- Never settling for “good enough” when improvement is possible
-
 
 ---
 
