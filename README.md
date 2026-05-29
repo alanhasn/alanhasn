@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-  IT Technician & Backend and DevOps Engineer • Networking and Security  Enthusiast
+  IT Technician & Backend and DevOps Engineer • Networking and Security  Enthusiast | Beginner in Android application development 
 </p>
 
 
