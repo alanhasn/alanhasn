@@ -1,28 +1,51 @@
+# ─────────────────────────────────────────────────────────────
+#  GitHub Contribution Snake — Workflow
+#  Generates dark + light SVG snake animations from contributions
+#  Output is committed to the `output` branch of this repo
+# ─────────────────────────────────────────────────────────────
+
 name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 0 * * *" 
-  workflow_dispatch:     
+    # Runs daily at 00:30 UTC
+    - cron: "30 0 * * *"
 
-permissions:
-  contents: write         
+  workflow_dispatch:
+    # Allows manual trigger from the Actions tab
+
+  push:
+    branches:
+      - main
 
 jobs:
-  build:
+  generate:
+    name: Generate Contribution Snake
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    permissions:
+      contents: write
+
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Generate Snake
-        uses: Platane/snk@v3
+      # ── Generate dark theme SVG ──────────────────────────────
+      - name: Generate dark snake SVG
+        uses: Platane/snk/svg-only@v3
         with:
-          github_user_name: alanhasn  
-          outputs: dist/snake.svg
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── Push output SVGs to the `output` branch ─────────────
+      - name: Push SVGs to output branch
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
