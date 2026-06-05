@@ -41,7 +41,7 @@
 &nbsp;
 [![GitHub](https://img.shields.io/badge/GITHUB-@alanhasn-0d1117?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)](https://alanhasn.github.io/vorsynth-portfolio/))
 &nbsp;
-[![PyPI](https://img.shields.io/badge/PyPI-SECURETOOL-0d1117?style=for-the-badge&logo=pypi&logoColor=white&labelColor=161b22)](https://pypi.org/user/alanhasn)
+[![PyPI](https://img.shields.io/badge/PyPI-SECURETOOL-0d1117?style=for-the-badge&logo=pypi&logoColor=white&labelColor=161b22)](https://pypi.org/user/vorsynth)
 &nbsp;
 [![Open Source](https://img.shields.io/badge/OPEN%20SOURCE-CONTRIBUTOR-0d1117?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=161b22)](https://github.com/alanhasn?tab=repositories)
 
