@@ -39,7 +39,7 @@
 
 [![Profile Views](https://komarev.com/ghpvc/?username=alanhasn&style=for-the-badge&color=0d1117&labelColor=161b22&label=PROFILE+VIEWS)](https://github.com/alanhasn)
 &nbsp;
-[![GitHub](https://img.shields.io/badge/GITHUB-@alanhasn-0d1117?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)](https://github.com/alanhasn)
+[![GitHub](https://img.shields.io/badge/GITHUB-@alanhasn-0d1117?style=for-the-badge&logo=github&logoColor=white&labelColor=161b22)]([https://github.com/alanhasn](https://alanhasn.github.io/vorsynth-portfolio/))
 &nbsp;
 [![PyPI](https://img.shields.io/badge/PyPI-SECURETOOL-0d1117?style=for-the-badge&logo=pypi&logoColor=white&labelColor=161b22)](https://pypi.org/user/alanhasn)
 &nbsp;
