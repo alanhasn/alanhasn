@@ -1,0 +1,13 @@
+{% import "_kit.svg.j2" as k with context %}
+{% set w, h = 1200, 340 %}
+{% call k.frame(w, h, "Closing statement", config.MOTTO ~ " " ~ config.MOTTO_SUB) %}
+{{ k.label(64, 68, "CLOSING STATEMENT", "faint") }}
+{{ k.label(1136, 68, config.CASE_ID, "accent", "end") }}
+
+<text x="58" y="190" class="display ink" font-size="92" letter-spacing="-3.2">{{ fit(config.MOTTO, "display", 92, 1076, -0.035) }}</text>
+<text x="64" y="236" class="sans muted" font-size="24">{{ config.MOTTO_SUB }}</text>
+
+<line class="rule" x1="64" y1="278" x2="1136" y2="278"/>
+{{ k.label(64, 310, "RENDERED  " ~ observed.strftime("%Y-%m-%d %H:%M UTC"), "faint", "start", 13) }}
+{{ k.label(1136, 310, "SET IN INTER AND JETBRAINS MONO  ·  SIL OFL", "faint", "end", 13) }}
+{% endcall %}

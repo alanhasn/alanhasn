@@ -1,0 +1,82 @@
+# Chain of Custody
+# Observes public activity once a day, seals it into the SHA-256 ledger,
+# renders every profile SVG and commits the result to the `assets` branch.
+# `main` holds source only; nothing here ever writes to it.
+
+name: Chain of Custody
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "build.py"
+      - "verify.py"
+      - "custody/**"
+      - "templates/**"
+      - "fonts/**"
+      - "requirements.txt"
+      - ".github/workflows/render.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: chain-of-custody
+  cancel-in-progress: false
+
+jobs:
+  seal:
+    name: Observe, seal, render
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v5
+
+      - name: Attach assets branch
+        run: |
+          if git ls-remote --exit-code --heads origin assets > /dev/null; then
+            git fetch --no-tags --depth=1 origin assets:assets
+            git worktree add dist assets
+          else
+            git worktree add --detach dist
+            git -C dist switch --orphan assets
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install toolchain
+        run: pip install -r requirements.txt
+
+      - name: Observe and seal
+        id: build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python build.py --out dist
+
+      - name: Verify chain
+        run: python verify.py --chain dist/ledger/chain.jsonl
+
+      - name: Commit evidence
+        working-directory: dist
+        env:
+          SEQ: ${{ steps.build.outputs.seq }}
+          HASH: ${{ steps.build.outputs.hash }}
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Evidence unchanged."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "seal ${SEQ}: ${HASH}"
+          git push origin assets

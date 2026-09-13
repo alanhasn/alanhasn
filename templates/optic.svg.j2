@@ -1,0 +1,59 @@
+{% import "_kit.svg.j2" as k with context %}
+{% set w, h = 1200, 640 %}
+{% set s = panel.stream %}
+{% set count = panel.frames | length %}
+{% set box, pad = 452, 28 %}
+{% set scale = ((box - 2 * pad) // panel.modules) %}
+{% set qr = panel.modules * scale %}
+{% set ox, oy = 64 + (box - qr) // 2, 132 + (box - qr) // 2 %}
+{% set cell = [22, (236 // s.k) - 6] | min %}
+{% call k.frame(w, h, "Exhibit Z — experimental optical data channel, architected with AI", "An animated, encrypted Photon fountain-code stream carrying ledger head " ~ head.hash ~ ". Pairing key " ~ config.PHOTON_KEY ~ ".") %}
+{{ k.label(64, 68, "EXHIBIT Z", "accent") }}
+{{ k.label(1136, 68, "AI-ASSISTED R&D EXPERIMENT  ·  PHOTON/1", "muted", "end") }}
+<line class="rule" x1="64" y1="92" x2="1136" y2="92"/>
+
+<rect x="64" y="132" width="{{ box }}" height="{{ box }}" rx="16" fill="{{ t.paper }}"/>
+<g transform="translate({{ ox }} {{ oy }}) scale({{ scale }})" fill="{{ t.module }}" shape-rendering="crispEdges">
+{% for f in panel.frames %}
+<path class="f{{ ' f0' if loop.first }}" opacity="{{ 1 if loop.first else 0 }}" d="{{ f.path }}"><animate attributeName="opacity" values="{{ f.values }}" keyTimes="{{ f.key_times }}" calcMode="discrete" dur="{{ panel.duration }}s" repeatCount="indefinite"/></path>
+{% endfor %}
+</g>
+
+<text x="578" y="176" class="display ink" font-size="40" letter-spacing="-0.8">A live optical transmission.</text>
+<text x="580" y="216" class="sans-medium ink" font-size="18">{{ fit("Experimental optical data channel, architected with AI.", "sans-medium", 18, 556) }}</text>
+<text x="580" y="242" class="sans muted" font-size="18">{{ fit("An encrypted stream carrying the chain head. Scan with Photon.", "sans", 18, 556) }}</text>
+
+{% set telemetry = [
+  ("PROTOCOL", "Photon/1 · LT fountain · SplitMix64"),
+  ("CIPHER", "AES-256-GCM · PBKDF2-SHA256 × 210k"),
+  ("SESSION", "0x%08X" | format(s.session)),
+  ("BLOCKS", "K = " ~ s.k ~ " · S = " ~ s.block_size ~ " B · QR v" ~ panel.version ~ "-L"),
+  ("LOOP", count ~ " symbols · " ~ config.PHOTON_FPS ~ " fps · decodes after " ~ s.decodes_after),
+] %}
+<g class="rise" style="animation-delay:.4s">
+{% for name, value in telemetry %}
+{{ k.label(580, 300 + loop.index0 * 34, name, "faint", "start", 13) }}
+<text x="760" y="{{ 300 + loop.index0 * 34 }}" class="mono ink" font-size="15">{{ value }}</text>
+{% endfor %}
+{{ k.label(580, 470, "PAIRING KEY", "faint", "start", 13) }}
+<text x="760" y="470" class="mono-medium accent" font-size="15" letter-spacing="1.2">{{ config.PHOTON_KEY }}</text>
+</g>
+
+<line class="rule" x1="580" y1="500" x2="1136" y2="500"/>
+{{ k.label(580, 536, "SYMBOL", "faint", "start", 13) }}
+{% for j in range(s.k) %}
+<rect x="{{ 900.5 + j * (cell + 6) }}" y="{{ 518.5 }}" width="{{ cell }}" height="{{ cell }}" rx="4" fill="none" stroke="{{ t.rule }}"/>
+{% endfor %}
+{% for f in panel.frames %}
+<g class="f{{ ' f0' if loop.first }}" opacity="{{ 1 if loop.first else 0 }}"><animate attributeName="opacity" values="{{ f.values }}" keyTimes="{{ f.key_times }}" calcMode="discrete" dur="{{ panel.duration }}s" repeatCount="indefinite"/>
+<text x="760" y="536" class="mono-medium ink" font-size="15">{{ "%03d" | format(f.seq) }} / {{ "%03d" | format(count) }}</text>
+{% for j in f.neighbors %}<rect x="{{ 900.5 + j * (cell + 6) }}" y="518.5" width="{{ cell }}" height="{{ cell }}" rx="4" fill="{{ t.accent }}"/>{% endfor %}
+</g>
+{% endfor %}
+
+<rect x="580" y="569" width="556" height="2" fill="{{ t.rule }}"/>
+<rect class="flow" x="580" y="569" width="0" height="2" fill="{{ t.accent }}"><animate attributeName="width" from="0" to="556" dur="{{ panel.duration }}s" repeatCount="indefinite"/></rect>
+
+{{ k.label(64, 614, "SCAN WITH PHOTON  ·  BINARY FRAMES, NOT URLS", "faint", "start", 13) }}
+{{ k.label(1136, 614, "STREAM SHA-256  " ~ panel.payload_sha256[:16], "faint", "end", 13) }}
+{% endcall %}

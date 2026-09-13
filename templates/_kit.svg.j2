@@ -1,0 +1,62 @@
+{#- Shared frame, type system and motion primitives. Import `with context`. -#}
+
+{% macro frame(w, h, title, desc) -%}
+<svg xmlns="http://www.w3.org/2000/svg" width="{{ w }}" height="{{ h }}" viewBox="0 0 {{ w }} {{ h }}" role="img" aria-labelledby="title desc">
+<title id="title">{{ title }}</title>
+<desc id="desc">{{ desc }}</desc>
+<style>
+{{ fonts }}
+text{font-kerning:normal}
+.sans{font-family:"VS Sans",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-weight:400}
+.sans-medium{font-family:"VS Sans",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-weight:500}
+.display{font-family:"VS Display",Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-weight:600}
+.mono{font-family:"VS Mono","JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:400}
+.mono-medium{font-family:"VS Mono","JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:500}
+.ink{fill:{{ t.ink }}}
+.muted{fill:{{ t.muted }}}
+.faint{fill:{{ t.faint }}}
+.accent{fill:{{ t.accent }}}
+.rule{stroke:{{ t.rule }};stroke-width:1}
+.bar{fill:{{ t.redact }};transform-box:fill-box;transform-origin:100% 50%;animation:lift 1.1s cubic-bezier(.76,0,.24,1) both}
+@keyframes lift{0%,35%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.rise{animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.stamp{transform-box:fill-box;transform-origin:50% 50%;animation:stamp .55s cubic-bezier(.2,1.3,.4,1) both}
+@keyframes stamp{from{opacity:0;transform:scale(1.18)}to{opacity:1;transform:scale(1)}}
+.pulse{transform-box:fill-box;transform-origin:50% 50%;animation:pulse 2.4s cubic-bezier(.2,.6,.3,1) infinite}
+@keyframes pulse{0%{opacity:.6;transform:scale(1)}85%,100%{opacity:0;transform:scale(3.4)}}
+@media (prefers-reduced-motion:reduce){
+.bar,.flow{display:none}
+.rise,.stamp{animation:none}
+.pulse{animation:none;opacity:0}
+.f{opacity:0!important}
+.f0{opacity:1!important}
+}
+</style>
+<defs>
+<pattern id="grain" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="11.5" y="11.5" width="1" height="1" fill="{{ t.grain }}"/></pattern>
+<clipPath id="card"><rect width="{{ w }}" height="{{ h }}" rx="20"/></clipPath>
+</defs>
+<g clip-path="url(#card)">
+<rect width="{{ w }}" height="{{ h }}" fill="{{ t.ground }}"/>
+<rect width="{{ w }}" height="{{ h }}" fill="url(#grain)"/>
+</g>
+<rect x=".5" y=".5" width="{{ w - 1 }}" height="{{ h - 1 }}" rx="19.5" fill="none" stroke="{{ t.rule }}"/>
+<path d="M24 34V24H34M{{ w - 34 }} 24H{{ w - 24 }}V34M{{ w - 24 }} {{ h - 34 }}V{{ h - 24 }}H{{ w - 34 }}M34 {{ h - 24 }}H24V{{ h - 34 }}" fill="none" stroke="{{ t.faint }}" stroke-width="1"/>
+{{ caller() }}
+</svg>
+{%- endmacro %}
+
+{% macro label(x, y, text, tone="muted", anchor="start", size=13.5) -%}
+<text x="{{ x }}" y="{{ y }}" class="mono {{ tone }}" font-size="{{ size }}" letter-spacing="{{ (size * 0.16) | round(2) }}" text-anchor="{{ anchor }}">{{ text }}</text>
+{%- endmacro %}
+
+{% macro redacted(x, y, text, face, tone, size, delay, tracking=0) -%}
+<text x="{{ x }}" y="{{ y }}" class="{{ face }} {{ tone }}" font-size="{{ size }}"{% if tracking %} letter-spacing="{{ (tracking * size) | round(2) }}"{% endif %}>{{ text }}</text>
+<rect class="bar" x="{{ x - 3 }}" y="{{ (y - size * 0.8) | round(1) }}" width="{{ (measure(text, face, size, tracking) + 6) | round(1) }}" height="{{ (size * 1.04) | round(1) }}" style="animation-delay:{{ delay }}s"/>
+{%- endmacro %}
+
+{% macro field(x, y, name, value, face="mono-medium", size=17, tone="ink") -%}
+{{ label(x, y, name, "faint", "start", 12.5) }}
+<text x="{{ x }}" y="{{ y + 28 }}" class="{{ face }} {{ tone }}" font-size="{{ size }}">{{ value }}</text>
+{%- endmacro %}

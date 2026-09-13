@@ -1,0 +1,48 @@
+{% import "_kit.svg.j2" as k with context %}
+{% set n = [rows | length, 1] | max %}
+{% set w, h = 1200, 330 + n * 64 + 58 %}
+{% set seals = {
+  "OPEN": ("UNDER REVIEW", "none", t.accent, t.accent),
+  "MERGED": ("ADMITTED", t.ink, t.ink, t.ground),
+  "CLOSED": ("WITHDRAWN", "none", t.faint, t.faint),
+} %}
+{% if primary %}
+  {% set lead = primary[0] %}
+  {% set target = config.TARGET_ALIASES.get(lead.repo, lead.repo) %}
+  {% set summary = (primary | length) ~ " to " ~ target ~ " (" ~ (lead.target_stars | group) ~ " stars). Every state change is sealed in the ledger." %}
+{% else %}
+  {% set summary = "No submissions to external repositories observed." %}
+{% endif %}
+{% call k.frame(w, h, "Exhibit A — upstream submissions", summary) %}
+{{ k.label(64, 68, "EXHIBIT A", "accent") }}
+{{ k.label(1136, 68, "UPSTREAM SUBMISSIONS", "muted", "end") }}
+<line class="rule" x1="64" y1="92" x2="1136" y2="92"/>
+
+<text x="62" y="160" class="display ink" font-size="46" letter-spacing="-0.92">{{ count }} change{{ "" if count == 1 else "s" }} submitted upstream</text>
+<text x="64" y="198" class="sans muted" font-size="19">{{ fit(summary, "sans", 19, 1072) }}</text>
+
+{{ k.label(64, 262, "STATE", "faint", "start", 13) }}
+{{ k.label(244, 262, "SUBMISSION", "faint", "start", 13) }}
+{{ k.label(864, 262, "TARGET", "faint", "start", 13) }}
+{{ k.label(1136, 262, "REF", "faint", "end", 13) }}
+<line class="rule" x1="64" y1="280" x2="1136" y2="280"/>
+
+{% for pr in rows %}
+{% set y = 330 + loop.index0 * 64 %}
+{% set name, fill, stroke, tone = seals.get(pr.state, seals["CLOSED"]) %}
+<g class="stamp" style="animation-delay:{{ (1.0 + loop.index0 * 0.12) | round(2) }}s">
+<rect x="64.5" y="{{ y - 20.5 }}" width="148" height="26" rx="5" fill="{{ fill }}" stroke="{{ stroke }}"/>
+<text x="138.5" y="{{ y - 3 }}" class="mono-medium" font-size="12" letter-spacing="1.4" text-anchor="middle" fill="{{ tone }}">{{ name }}</text>
+</g>
+{{ k.redacted(244, y, fit(pr.title, "sans", 19, 580), "sans", "ink", 19, (0.7 + loop.index0 * 0.12) | round(2)) }}
+<text x="864" y="{{ y }}" class="mono muted" font-size="15">{{ fit(config.TARGET_ALIASES.get(pr.repo, pr.repo.split("/")[1]), "mono", 15, 200) }}</text>
+<text x="1136" y="{{ y }}" class="mono faint" font-size="14" text-anchor="end">#{{ pr.number }}</text>
+{% if not loop.last %}<line class="rule" x1="64" y1="{{ y + 26 }}" x2="1136" y2="{{ y + 26 }}" opacity=".6"/>{% endif %}
+{% else %}
+<text x="244" y="330" class="sans muted" font-size="19">No upstream submissions observed.</text>
+{% endfor %}
+
+<line class="rule" x1="64" y1="{{ h - 64 }}" x2="1136" y2="{{ h - 64 }}"/>
+{{ k.label(64, h - 32, "SOURCE  API.GITHUB.COM/GRAPHQL", "faint", "start", 13) }}
+{{ k.label(1136, h - 32, "OBSERVED  " ~ observed.strftime("%Y-%m-%d %H:%M UTC"), "faint", "end", 13) }}
+{% endcall %}

@@ -1,0 +1,40 @@
+{% import "_kit.svg.j2" as k with context %}
+{% set w, h = 1200, 640 %}
+{% call k.frame(w, h, "Case file " ~ config.CASE_ID ~ " — " ~ config.ALIAS, config.ROLE ~ ", " ~ config.JURISDICTION ~ ". " ~ config.DIRECTIVE) %}
+{{ k.label(64, 68, "CASE FILE  ·  CHAIN OF CUSTODY") }}
+{{ k.label(1136, 68, config.CASE_ID, "accent", "end", 15) }}
+<line class="rule" x1="64" y1="92" x2="1136" y2="92"/>
+
+{{ k.label(64, 150, "SUBJECT ALIAS", "faint", "start", 13) }}
+{{ k.redacted(60, 268, config.ALIAS, "display", "ink", 124, 0.25, -0.04) }}
+
+<g class="stamp" style="animation-delay:2.3s">
+<rect x="880.5" y="146.5" width="255" height="130" rx="12" fill="none" stroke="{{ t.accent }}"/>
+<circle cx="910" cy="211.5" r="7" fill="none" stroke="{{ t.accent }}"/>
+<line x1="930.5" y1="160" x2="930.5" y2="263" stroke="{{ t.accent }}" stroke-dasharray="2 4"/>
+{{ k.label(952, 184, "EVIDENCE SEQ", "accent", "start", 13) }}
+<text x="950" y="228" class="mono-medium ink" font-size="34">{{ "%04d" | format(head.seq) }}</text>
+<text x="952" y="256" class="mono muted" font-size="13">SEALED {{ head.date }}</text>
+</g>
+
+{{ k.label(64, 350, "SUBJECT", "faint", "start", 13) }}
+{{ k.redacted(64, 386, config.SUBJECT, "sans-medium", "ink", 21, 0.9) }}
+{{ k.label(300, 350, "ROLE", "faint", "start", 13) }}
+{{ k.redacted(300, 386, config.ROLE, "sans-medium", "ink", 21, 1.05) }}
+{{ k.label(780, 350, "JURISDICTION", "faint", "start", 13) }}
+{{ k.redacted(780, 386, config.JURISDICTION, "sans-medium", "ink", 21, 1.2) }}
+{{ k.label(980, 350, "OPENED", "faint", "start", 13) }}
+{{ k.redacted(980, 386, config.OPENED, "mono-medium", "ink", 20, 1.35) }}
+<line class="rule" x1="64" y1="424" x2="1136" y2="424"/>
+
+{{ k.label(64, 476, "STANDING DIRECTIVE", "faint", "start", 13) }}
+{{ k.redacted(64, 528, fit(config.DIRECTIVE, "sans-medium", 32, 1072, -0.01), "sans-medium", "ink", 32, 1.6, -0.01) }}
+<line class="rule" x1="64" y1="572" x2="1136" y2="572"/>
+
+<circle class="pulse" cx="70" cy="605" r="4" fill="{{ t.accent }}"/>
+<circle cx="70" cy="605" r="4" fill="{{ t.accent }}"/>
+<text x="86" y="610" class="mono-medium accent" font-size="13" letter-spacing="2">CHAIN INTACT</text>
+<text x="290" y="610" class="mono" font-size="13"><tspan class="faint" letter-spacing="2">ENTRIES</tspan><tspan class="ink" dx="12">{{ "%04d" | format(total) }}</tspan></text>
+<text x="470" y="610" class="mono" font-size="13"><tspan class="faint" letter-spacing="2">HEAD</tspan><tspan class="ink" dx="12">{{ head.hash | short(16, 8) }}</tspan></text>
+<text x="1136" y="610" class="mono" font-size="13" text-anchor="end"><tspan class="faint" letter-spacing="2">OBSERVED</tspan><tspan class="ink" dx="12">{{ observed.strftime("%Y-%m-%d %H:%M UTC") }}</tspan></text>
+{% endcall %}

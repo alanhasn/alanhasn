@@ -1,0 +1,23 @@
+{% import "_kit.svg.j2" as k with context %}
+{% set w, h = 600, 380 %}
+{% set owner, name = exhibit.repo.split("/") %}
+{% call k.frame(w, h, "Exhibit " ~ exhibit.tag ~ " — " ~ exhibit.repo, exhibit.abstract | join(" ")) %}
+{{ k.label(44, 60, "EXHIBIT " ~ exhibit.tag, "accent") }}
+{{ k.label(556, 60, exhibit.classification, "muted", "end") }}
+<line class="rule" x1="44" y1="82" x2="556" y2="82"/>
+
+<text x="44" y="120" class="mono faint" font-size="14">{{ exhibit.repo if exhibit.title else owner ~ " /" }}</text>
+<text x="42" y="160" class="display ink" font-size="34" letter-spacing="-0.68">{{ fit(exhibit.title or name, "display", 34, 512, -0.02) }}</text>
+
+{% for line in exhibit.abstract %}
+{{ k.redacted(44, 204 + loop.index0 * 27, fit(line, "sans", 18.5, 512), "sans", "muted", 18.5, (0.6 + loop.index0 * 0.14) | round(2)) }}
+{% endfor %}
+<line class="rule" x1="44" y1="290" x2="556" y2="290"/>
+
+<g class="rise" style="animation-delay:1.1s">
+{{ k.field(44, 320, "HEAD", repo.head[:7] if repo and repo.head else "—") }}
+{{ k.field(172, 320, "COMMITS", repo.commits | group if repo else "—") }}
+{{ k.field(300, 320, "LANGUAGE", fit(repo.language, "mono-medium", 15, 120) if repo and repo.language else "—") }}
+{{ k.field(428, 320, "LAST COMMIT", repo.committed[:10] if repo and repo.committed else "—") }}
+</g>
+{% endcall %}
