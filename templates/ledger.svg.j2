@@ -10,11 +10,11 @@
 <text x="62" y="160" class="display ink" font-size="46" letter-spacing="-0.92">{{ total | group }} sealed observation{{ "" if total == 1 else "s" }}</text>
 <text x="64" y="198" class="sans muted" font-size="19">Each day of public activity is hashed into the entry that follows it. Alter one, and every later hash breaks.</text>
 
-{{ k.label(112, 262, "SEQ", "faint", "start", 13) }}
-{{ k.label(196, 262, "SEALED", "faint", "start", 13) }}
-{{ k.label(356, 262, "EVIDENCE", "faint", "start", 13) }}
-{{ k.label(716, 262, "PREV", "faint", "start", 13) }}
-{{ k.label(926, 262, "HASH", "faint", "start", 13) }}
+{{ k.label(112, 262, "NO.", "faint", "start", 15) }}
+{{ k.label(196, 262, "SEALED", "faint", "start", 15) }}
+{{ k.label(356, 262, "EVIDENCE", "faint", "start", 15) }}
+{{ k.label(716, 262, "PREV", "faint", "start", 15) }}
+{{ k.label(926, 262, "HASH", "faint", "start", 15) }}
 <line class="rule" x1="64" y1="280" x2="1136" y2="280"/>
 
 {% if n > 1 %}
@@ -35,10 +35,10 @@
 <circle cx="76" cy="{{ y - 5 }}" r="4.5" fill="{{ t.ground }}" stroke="{{ t.muted }}" stroke-width="1.5"/>
 {% endif %}
 <g class="rise" style="animation-delay:{{ (0.5 + loop.index0 * 0.1) | round(2) }}s">
-<text x="112" y="{{ y }}" class="mono-medium ink" font-size="15">{{ "%04d" | format(entry.seq) }}</text>
+<text x="112" y="{{ y }}" class="mono-medium ink" font-size="15">{{ "%04d" | format(entry.seq + 1) }}</text>
 <text x="196" y="{{ y }}" class="mono ink" font-size="15">{{ entry.date }}</text>
 <text x="356" y="{{ y }}" class="sans muted" font-size="16">{{ fit(summary, "sans", 16, 330) }}</text>
-<text x="716" y="{{ y }}" class="mono faint" font-size="14">{{ "genesis" if entry.seq == 0 else entry.prev | short(8, 4) }}</text>
+<text x="716" y="{{ y }}" class="mono muted" font-size="14">{{ "genesis" if entry.seq == 0 else entry.prev | short(8, 4) }}</text>
 <text x="926" y="{{ y }}" class="mono-medium {{ 'accent' if loop.first else 'ink' }}" font-size="14">{{ entry.hash | short(12, 6) }}</text>
 </g>
 {% if not loop.last %}<line class="rule" x1="112" y1="{{ y + 25 }}" x2="1136" y2="{{ y + 25 }}" opacity=".6"/>{% endif %}
@@ -46,5 +46,5 @@
 
 <line class="rule" x1="64" y1="{{ h - 70 }}" x2="1136" y2="{{ h - 70 }}"/>
 <text x="64" y="{{ h - 34 }}" class="mono" font-size="14"><tspan class="accent">$ </tspan><tspan class="ink">git clone https://github.com/{{ config.SUBJECT }}/{{ config.SUBJECT }} &amp;&amp; cd {{ config.SUBJECT }} &amp;&amp; python verify.py</tspan></text>
-{{ k.label(1136, h - 34, "GENESIS  " ~ genesis.date, "faint", "end", 13) }}
+{{ k.label(1136, h - 34, "GENESIS  " ~ genesis.date, "faint", "end", 15) }}
 {% endcall %}

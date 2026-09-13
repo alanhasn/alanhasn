@@ -47,8 +47,8 @@ text{font-kerning:normal}
 </svg>
 {%- endmacro %}
 
-{% macro label(x, y, text, tone="muted", anchor="start", size=13.5) -%}
-<text x="{{ x }}" y="{{ y }}" class="mono {{ tone }}" font-size="{{ size }}" letter-spacing="{{ (size * 0.16) | round(2) }}" text-anchor="{{ anchor }}">{{ text }}</text>
+{% macro label(x, y, text, tone="muted", anchor="start", size=15) -%}
+<text x="{{ x }}" y="{{ y }}" class="mono {{ tone }}" font-size="{{ size }}" letter-spacing="{{ (size * 0.12) | round(2) }}" text-anchor="{{ anchor }}">{{ text }}</text>
 {%- endmacro %}
 
 {% macro redacted(x, y, text, face, tone, size, delay, tracking=0) -%}
@@ -57,6 +57,6 @@ text{font-kerning:normal}
 {%- endmacro %}
 
 {% macro field(x, y, name, value, face="mono-medium", size=17, tone="ink") -%}
-{{ label(x, y, name, "faint", "start", 12.5) }}
+{{ label(x, y, name, "faint", "start", 14) }}
 <text x="{{ x }}" y="{{ y + 28 }}" class="{{ face }} {{ tone }}" font-size="{{ size }}">{{ value }}</text>
 {%- endmacro %}

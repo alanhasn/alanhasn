@@ -44,7 +44,7 @@ def dossier(head: dict[str, Any]) -> bytes:
         ("SUBJECT", f"{config.ALIAS} ({config.SUBJECT})"),
         ("ROLE", config.ROLE),
         ("ORIGIN", config.JURISDICTION),
-        ("SEQ", f"{head['seq']:04d}"),
+        ("ENTRY", f"{head['seq'] + 1:04d}"),
         ("SEALED", head["date"]),
         ("HEAD", head["hash"]),
         ("VERIFY", f"github.com/{config.SUBJECT}/{config.SUBJECT} :: python verify.py"),

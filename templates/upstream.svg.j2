@@ -21,10 +21,10 @@
 <text x="62" y="160" class="display ink" font-size="46" letter-spacing="-0.92">{{ count }} change{{ "" if count == 1 else "s" }} submitted upstream</text>
 <text x="64" y="198" class="sans muted" font-size="19">{{ fit(summary, "sans", 19, 1072) }}</text>
 
-{{ k.label(64, 262, "STATE", "faint", "start", 13) }}
-{{ k.label(244, 262, "SUBMISSION", "faint", "start", 13) }}
-{{ k.label(864, 262, "TARGET", "faint", "start", 13) }}
-{{ k.label(1136, 262, "REF", "faint", "end", 13) }}
+{{ k.label(64, 262, "STATE", "faint", "start", 15) }}
+{{ k.label(244, 262, "SUBMISSION", "faint", "start", 15) }}
+{{ k.label(864, 262, "TARGET", "faint", "start", 15) }}
+{{ k.label(1136, 262, "REF", "faint", "end", 15) }}
 <line class="rule" x1="64" y1="280" x2="1136" y2="280"/>
 
 {% for pr in rows %}
@@ -36,13 +36,13 @@
 </g>
 {{ k.redacted(244, y, fit(pr.title, "sans", 19, 580), "sans", "ink", 19, (0.7 + loop.index0 * 0.12) | round(2)) }}
 <text x="864" y="{{ y }}" class="mono muted" font-size="15">{{ fit(config.TARGET_ALIASES.get(pr.repo, pr.repo.split("/")[1]), "mono", 15, 200) }}</text>
-<text x="1136" y="{{ y }}" class="mono faint" font-size="14" text-anchor="end">#{{ pr.number }}</text>
+<text x="1136" y="{{ y }}" class="mono muted" font-size="15" text-anchor="end">#{{ pr.number }}</text>
 {% if not loop.last %}<line class="rule" x1="64" y1="{{ y + 26 }}" x2="1136" y2="{{ y + 26 }}" opacity=".6"/>{% endif %}
 {% else %}
 <text x="244" y="330" class="sans muted" font-size="19">No upstream submissions observed.</text>
 {% endfor %}
 
 <line class="rule" x1="64" y1="{{ h - 64 }}" x2="1136" y2="{{ h - 64 }}"/>
-{{ k.label(64, h - 32, "SOURCE  API.GITHUB.COM/GRAPHQL", "faint", "start", 13) }}
-{{ k.label(1136, h - 32, "OBSERVED  " ~ observed.strftime("%Y-%m-%d %H:%M UTC"), "faint", "end", 13) }}
+{{ k.label(64, h - 32, "SOURCE  API.GITHUB.COM/GRAPHQL", "faint", "start", 15) }}
+{{ k.label(1136, h - 32, "OBSERVED  " ~ observed.strftime("%Y-%m-%d %H:%M UTC"), "faint", "end", 15) }}
 {% endcall %}

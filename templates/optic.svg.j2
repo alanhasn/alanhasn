@@ -32,15 +32,15 @@
 ] %}
 <g class="rise" style="animation-delay:.4s">
 {% for name, value in telemetry %}
-{{ k.label(580, 300 + loop.index0 * 34, name, "faint", "start", 13) }}
+{{ k.label(580, 300 + loop.index0 * 34, name, "faint", "start", 15) }}
 <text x="760" y="{{ 300 + loop.index0 * 34 }}" class="mono ink" font-size="15">{{ value }}</text>
 {% endfor %}
-{{ k.label(580, 470, "PAIRING KEY", "faint", "start", 13) }}
+{{ k.label(580, 470, "PAIRING KEY", "faint", "start", 15) }}
 <text x="760" y="470" class="mono-medium accent" font-size="15" letter-spacing="1.2">{{ config.PHOTON_KEY }}</text>
 </g>
 
 <line class="rule" x1="580" y1="500" x2="1136" y2="500"/>
-{{ k.label(580, 536, "SYMBOL", "faint", "start", 13) }}
+{{ k.label(580, 536, "SYMBOL", "faint", "start", 15) }}
 {% for j in range(s.k) %}
 <rect x="{{ 900.5 + j * (cell + 6) }}" y="{{ 518.5 }}" width="{{ cell }}" height="{{ cell }}" rx="4" fill="none" stroke="{{ t.rule }}"/>
 {% endfor %}
@@ -54,6 +54,6 @@
 <rect x="580" y="569" width="556" height="2" fill="{{ t.rule }}"/>
 <rect class="flow" x="580" y="569" width="0" height="2" fill="{{ t.accent }}"><animate attributeName="width" from="0" to="556" dur="{{ panel.duration }}s" repeatCount="indefinite"/></rect>
 
-{{ k.label(64, 614, "SCAN WITH PHOTON  ·  BINARY FRAMES, NOT URLS", "faint", "start", 13) }}
-{{ k.label(1136, 614, "STREAM SHA-256  " ~ panel.payload_sha256[:16], "faint", "end", 13) }}
+{{ k.label(64, 614, "SCAN WITH PHOTON  ·  BINARY FRAMES, NOT URLS", "faint", "start", 15) }}
+{{ k.label(1136, 614, "STREAM SHA-256  " ~ panel.payload_sha256[:16], "faint", "end", 15) }}
 {% endcall %}
